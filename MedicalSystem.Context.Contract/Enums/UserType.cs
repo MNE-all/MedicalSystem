@@ -5,7 +5,13 @@
     /// </summary>
     public enum UserType
     {
+        /// <summary>
+        /// Пациент
+        /// </summary>
         Patient,
+        /// <summary>
+        /// Врач
+        /// </summary>
         Doctor
     }
 }

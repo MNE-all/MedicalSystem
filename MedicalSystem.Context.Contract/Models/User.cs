@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MedicalSystem.Context.Contract.Enums;
 
 namespace MedicalSystem.Context.Contract.Models
 {
-    internal class User
+    /// <summary>
+    /// Пользователь системы
+    /// </summary>
+    /// <remarks>
+    /// Пользователем является как пациент, так и медицинский работник
+    /// </remarks>
+    public class User
     {
+        public string Fullname { get; set; } = null!;
+        public UserType Role { get; set; }
     }
 }
